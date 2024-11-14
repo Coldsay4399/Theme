@@ -9,16 +9,16 @@ clear
 
 installTheme(){
     cd /var/www/
-    tar -cvf Utamabackup.tar.gz pterodactyl
+    tar -cvf Themebackup.tar.gz pterodactyl
     echo "Installing theme..."
     cd /var/www/pterodactyl
-    rm -r Utama
-    git clone https://github.com/ChaikalTDR/Utama.git
-    cd Utama
-    rm /var/www/pterodactyl/resources/scripts/Utama.css
+    rm -r Theme
+    git clone https://github.com/juun4/Theme.git
+    cd Theme
+    rm /var/www/pterodactyl/resources/scripts/Theme.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     mv index.tsx /var/www/pterodactyl/resources/scripts/index.tsx
-    mv Utama.css /var/www/pterodactyl/resources/scripts/Utama.css
+    mv Theme.css /var/www/pterodactyl/resources/scripts/Theme.css
     cd /var/www/pterodactyl
 
     curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
@@ -47,24 +47,24 @@ installThemeQuestion(){
 }
 
 repair(){
-    bash <(curl https://raw.githubusercontent.com/ChaikalTDR/Utama/master/repair.sh)
+    bash <(curl https://raw.githubusercontent.com/juun4/Theme/master/repair.sh)
 }
 
 restoreBackUp(){
     echo "Restoring backup..."
     cd /var/www/
-    tar -xvf Utamabackup.tar.gz
-    rm Utamabackup.tar.gz
+    tar -xvf Themebackup.tar.gz
+    rm Themebackup.tar.gz
 
     cd /var/www/pterodactyl
     yarn build:production
     sudo php artisan optimize:clear
 }
-echo "ChaikalTDR Offc"
+echo "Junaa Offc"
 echo "AUTO INSTALL THEME"
 echo ""
-echo "Wa: +62 896-5255-2565"
-echo "Nama: ChaikalTDR Offc"
+echo "Wa: +62 856-0079-3871"
+echo "Nama: Junaa Offc"
 echo ""
 echo "[1] Install theme"
 echo "[2] Restore backup"
