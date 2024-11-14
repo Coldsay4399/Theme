@@ -1,12 +1,15 @@
-# Costom Pterodactyl Theme
+# Custom Pterodactyl Theme
 
 Install script:
 ```sh
-bash <(curl https://raw.githubusercontent.com/ChaikalTDR/Utama/master/install.sh)
+bash <(curl https://raw.githubusercontent.com/juun4/Theme/master/install.sh)
 ```
-# ChaikalTDR Offc
-![ChaikalTDR Offc](https://telegra.ph/file/2a13b36eacc0ff32e56e7.jpg "ChaikalTDR Offc")
+# Junaa Offc
+![Junaa Offc](https://8030.us.kg/file/beJwKkR5P4Z5.jpg"Junaa Offc")
 # Big Thanks To
+```sh
+https://github.com/PrinzXz
+```
 ```sh
 https://github.com/anamnich
 ```
