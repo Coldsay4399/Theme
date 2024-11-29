@@ -21,7 +21,7 @@ installTheme(){
     mv Theme.css /var/www/pterodactyl/resources/scripts/Theme.css
     cd /var/www/pterodactyl
 
-    curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+    curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
     apt update
     apt install -y nodejs
 
